@@ -5,13 +5,13 @@ order: 4
 
 ## Diamond
 
-A built-in node Diamond has the default style as below, the label is drawed on the center of it.<br /> <img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*xS0cQKTywjkAAAAAAAAAAABkARQnAQ' width=100 alt='img'/>
+The built-in node Diamond has the default style shown below. The label is drawn in the center of the diamond.<br /> <img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*xS0cQKTywjkAAAAAAAAAAABkARQnAQ' width=100 alt='img'/>
 
 ## Usage
 
 As stated in [Built-in Nodes](/en/docs/manual/middle/elements/nodes/defaultNode) , there are two ways to configure the node: Configure it when instantiating a Graph globally; Configure it in the data.
 
-### 1 Global Configure When Instantiating a Graph
+### 1 Global Configuration When Instantiating a Graph
 
 Assign `type` to `'diamond'` in the `defaultNode` object when instantiating a Graph:
 
@@ -29,7 +29,7 @@ const graph = new G6.Graph({
 
 ### 2 Configure in the Data
 
-To configure different nodes with different properties, you can write the properties into the node data.
+To configure different nodes with different properties, you can write the properties into the node data:
 
 ```javascript
 const data = {
@@ -47,23 +47,23 @@ const data = {
 }
 ```
 
-## Property
+## Properties
 
-The [Node Common Properties](/en/docs/manual/middle/elements/nodes/defaultNode/#common-property) are available for Diamond node, some special properties are shown below. The property with Object type will be described after the table:
+The [Node Common Properties](/en/docs/manual/middle/elements/nodes/defaultNode/#common-property) are available for Diamond nodes. Some special properties are shown below. The property with Object type will be described after the table.
 
 | Name | Description | Type | Remark |
 | --- | --- | --- | --- |
 | size | The width and the height of the diamond | Number / Array | When it is a number, the width and the height are the same |
-| style | The default style of diamond node | Object | Correspond to the styles in Canvas |
+| style | The default style of the diamond node | Object | Correspond to the styles in Canvas |
 | label | The text of the label | String |  |
-| labelCfg | The configurations of the label | Object |  |
+| labelCfg | The configuration of the label | Object |  |
 | stateStyles | The styles in different states | Object | Refer to [Configure Styles for State](/en/docs/manual/middle/states/state#configure-styles-for-state) |
 | linkPoints | The link points **in visual** | Object | They are invisible by default. It is usually used with the [anchorPoints](/en/docs/manual/middle/elements/nodes/anchorpoint). The differences are described in [linkPoints](#linkpoints) |
 | icon | The configurations of the icon on the diamond node | Object | It is invisible by default |
 
 ### style
 
-The [Node Common Styles](/en/docs/manual/middle/elements/nodes/defaultNode/#style) are available for Circle node.`style` is an object to configure the filling color, stroke, and other styles. The following code shows how to configure the `style` globally when instantiating a Graph.<br /> <br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*t7w7RpKZVGkAAAAAAAAAAABkARQnAQ' width=100 alt='img'/>
+The [Node Common Styles](/en/docs/manual/middle/elements/nodes/defaultNode/#style) are available for Circle node. `style` is an object to configure the fill color, stroke, and other styles. The following code shows how to configure the `style` globally when instantiating a Graph.<br /> <br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*t7w7RpKZVGkAAAAAAAAAAABkARQnAQ' width=100 alt='img'/>
 
 ```javascript
 const data = {
@@ -96,7 +96,7 @@ graph.render();
 
 ### labelCfg
 
-`labelCfg` is an object to configure the label of the node. The [Node Common Label Configurations](/en/docs/manual/middle/elements/nodes/defaultNode/#label-and-labelcfg) are available. Base on the code in [style](#style) section, we add `labelCfg` to `defaultNode`.。<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Pmb6QITup3wAAAAAAAAAAABkARQnAQ' width=100 alt='img'/>
+`labelCfg` is an object to configure the label of the node. The [Node Common Label Configurations](/en/docs/manual/middle/elements/nodes/defaultNode/#label-and-labelcfg) are available. Based on the code in the [style](#style) section, we add `labelCfg` to `defaultNode`.<br /><img src='https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*Pmb6QITup3wAAAAAAAAAAABkARQnAQ' width=100 alt='img'/>
 
 ```javascript
 const data = {
