@@ -196,7 +196,7 @@ The result:<br />
 G6.registerEdge(
   'custom-edge',
   {
-    // Response the states change
+    // Respond to state change
     setState(name, value, item) {
       const group = item.getContainer();
       const shape = group.get('children')[0]; // The order is determined by the ordering of been draw
